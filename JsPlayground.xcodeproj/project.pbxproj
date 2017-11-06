@@ -14,6 +14,10 @@
 		C4D3AF6F1FAB7DC400A9073D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D3AF6D1FAB7DC400A9073D /* LaunchScreen.storyboard */; };
 		C4D3AF7A1FAB7DC500A9073D /* JsPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D3AF791FAB7DC500A9073D /* JsPlaygroundTests.swift */; };
 		C4D3AF851FAB7DC500A9073D /* JsPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D3AF841FAB7DC500A9073D /* JsPlaygroundUITests.swift */; };
+		C4D3AF931FAB7E3E00A9073D /* JSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D3AF921FAB7E3E00A9073D /* JSManager.swift */; };
+		C4D3AF9B1FAB838100A9073D /* model.js in Resources */ = {isa = PBXBuildFile; fileRef = C4D3AF9A1FAB838100A9073D /* model.js */; };
+		C4D3AF9C1FAB838B00A9073D /* model.js in Resources */ = {isa = PBXBuildFile; fileRef = C4D3AF9A1FAB838100A9073D /* model.js */; };
+		C4D3AF9E1FB0E0B100A9073D /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D3AF9D1FB0E0B100A9073D /* ChatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,9 @@
 		C4D3AF801FAB7DC500A9073D /* JsPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D3AF841FAB7DC500A9073D /* JsPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsPlaygroundUITests.swift; sourceTree = "<group>"; };
 		C4D3AF861FAB7DC500A9073D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4D3AF921FAB7E3E00A9073D /* JSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSManager.swift; sourceTree = "<group>"; };
+		C4D3AF9A1FAB838100A9073D /* model.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = model.js; sourceTree = "<group>"; };
+		C4D3AF9D1FB0E0B100A9073D /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +84,7 @@
 		C4D3AF581FAB7DC400A9073D = {
 			isa = PBXGroup;
 			children = (
+				C4D3AF971FAB80F400A9073D /* Resources */,
 				C4D3AF631FAB7DC400A9073D /* JsPlayground */,
 				C4D3AF781FAB7DC500A9073D /* JsPlaygroundTests */,
 				C4D3AF831FAB7DC500A9073D /* JsPlaygroundUITests */,
@@ -97,6 +105,8 @@
 		C4D3AF631FAB7DC400A9073D /* JsPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				C4D3AF9D1FB0E0B100A9073D /* ChatModel.swift */,
+				C4D3AF921FAB7E3E00A9073D /* JSManager.swift */,
 				C4D3AF641FAB7DC400A9073D /* AppDelegate.swift */,
 				C4D3AF661FAB7DC400A9073D /* ViewController.swift */,
 				C4D3AF681FAB7DC400A9073D /* Main.storyboard */,
@@ -123,6 +133,14 @@
 				C4D3AF861FAB7DC500A9073D /* Info.plist */,
 			);
 			path = JsPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		C4D3AF971FAB80F400A9073D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4D3AF9A1FAB838100A9073D /* model.js */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D3AF9B1FAB838100A9073D /* model.js in Resources */,
 				C4D3AF6F1FAB7DC400A9073D /* LaunchScreen.storyboard in Resources */,
 				C4D3AF6C1FAB7DC400A9073D /* Assets.xcassets in Resources */,
 				C4D3AF6A1FAB7DC400A9073D /* Main.storyboard in Resources */,
@@ -242,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D3AF9C1FAB838B00A9073D /* model.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D3AF931FAB7E3E00A9073D /* JSManager.swift in Sources */,
 				C4D3AF671FAB7DC400A9073D /* ViewController.swift in Sources */,
 				C4D3AF651FAB7DC400A9073D /* AppDelegate.swift in Sources */,
+				C4D3AF9E1FB0E0B100A9073D /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YYMBDTT4Z;
 				INFOPLIST_FILE = JsPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.servicenow.mobile.JsPlayground;
@@ -441,6 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YYMBDTT4Z;
 				INFOPLIST_FILE = JsPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.servicenow.mobile.JsPlayground;
