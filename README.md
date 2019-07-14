@@ -9,7 +9,7 @@ Data Model is exposed as Swift classes, so it is easy to consume in ViewControll
 
 This is just a Proof of Concept to help get a feel for whether or not it is worth the effort to build the model-layer in JS
 
-Most of the usage is in the Unit Tests currently - will expose more in the test app soon, unless we decide to abondon this approach ;-)
+Most of the usage is in the Unit Tests currently - will expose more in the test app soon, unless we decide to abandon this approach ;-)
 
 https://github.com/mattinasi/JsPlayground/blob/master/JsPlaygroundTests/JsPlaygroundTests.swift
 
